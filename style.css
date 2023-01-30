@@ -22,7 +22,6 @@ body{
 }
 
 #navbar{
-    /* height: inherit; */
     width: 100%;
     margin: auto;
     float: right;
@@ -31,6 +30,7 @@ body{
     top: 0;
     left: 0;
     z-index: 1;
+    box-shadow: 0px 0px 15px 0px black;
 }
 
 #navbar ul{
@@ -184,17 +184,19 @@ body{
 }
 
 #contact{
-    height: 100vh;
+    min-height: 600px;
     width: 100%;
     overflow: hidden;
     background-color: var(--main-grey);
-    padding: 200px;
+    /* padding: 100px 0; */
 }
 
 .footer{
-    width: 70%;
-    margin: auto;
+    width: 100%;
+    height: 400px;
+    margin: 150px 0 0;
     text-align: center;
+    border-bottom: 4px solid var(--main-red);
 }
 
 .footer h1{
@@ -207,4 +209,148 @@ body{
     font-style: italic;
     font-weight: lighter;
     letter-spacing: 3px;
+}
+
+.socials{
+    width: 100%;
+    margin: 50px auto;
+}
+
+.icons{
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--main-white);
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px;
+    position: relative;
+    top: 0;
+    transition: .5s ease;
+}
+
+.icons:hover{
+    top: 6px;
+}
+
+.footer2{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.footer2 p{
+    font-size: 19px;
+    color: var(--main-white);
+}
+
+.footer2 p a{
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 480px){
+    #navbar ul{
+        float: none;
+    }
+
+    #welcome-section .intro{
+        width: 100%
+    }
+    #welcome-section .intro h1{
+        font-size: 2rem;
+    }
+
+    .container .heading{
+        width: auto;
+    }
+
+    #projects .container .heading h1{
+        font-size: 1rem;
+    }
+
+    .project-tile{
+        width: 100%;
+    }
+
+    #contact .footer h1{
+        font-size: 2rem;
+    }
+
+    .socials{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .icons{
+        flex-flow: row;
+        width: 40%;
+    }
+
+    .footer2{
+        height: 200px;
+        width: 70%;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    .footer2 p{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #navbar ul{
+        float: none;
+    }
+
+    #welcome-section .intro{
+        width: 100%
+    }
+    #welcome-section .intro h1{
+        font-size: 2rem;
+    }
+
+    .container .heading{
+        width: auto;
+    }
+
+    #projects .container .heading h1{
+        font-size: 1rem;
+    }
+
+    .project-tile{
+        width: 100%;
+    }
+
+    #contact .footer h1{
+        font-size: 2rem;
+    }
+
+    .socials{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .icons{
+        flex-flow: row;
+        width: 40%;
+    }
+
+    .footer2{
+        height: 200px;
+        width: 70%;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    .footer2 p{
+        width: 100%;
+    }
 }
